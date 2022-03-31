@@ -1,0 +1,24 @@
+
+POST https://3t9a9w8nj7.execute-api.eu-central-1.amazonaws.com/dev/auction HTTP/1.1
+content-type: application/json
+
+{
+    "title" : "TOYOTA AYGO car"
+}
+
+###
+
+GET https://3t9a9w8nj7.execute-api.eu-central-1.amazonaws.com/dev/auctions
+
+###
+
+GET https://3t9a9w8nj7.execute-api.eu-central-1.amazonaws.com/dev/auction/c3773c9f-ef21-4d23-8ab3-7ece2202fc30
+
+###
+
+PATCH https://3t9a9w8nj7.execute-api.eu-central-1.amazonaws.com/dev/auction/c3773c9f-ef21-4d23-8ab3-7ece2202fc30/bid HTTP/1.1
+content-type: application/json
+
+{
+    "amount" : 51
+}
